@@ -15,7 +15,7 @@ inputText.addEventListener("keypress", (event) => {
         // console.log(movie)
         inputText.value = ""; // limpiar input
 
-        fetch(`http://api.giphy.com/v1/gifs/search${gif}&apikey=dc6zaTOxFJmzC`)
+        fetch(`https://api.giphy.com/v1/gifs/search?api_key=w0pDBtDpXaNmRzDVpcVhUg4iTuTiI9S0&q=${gif}&limit=25&offset=0&rating=G&lang=en`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
